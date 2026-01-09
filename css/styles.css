@@ -546,7 +546,6 @@ address {
   position: absolute;
   top: 24px;
   right: 24px;
-  margin-bottom: 24px;
 
   width: 24px;
   height: 24px;
@@ -563,20 +562,13 @@ address {
 }
 
 .modal-close-icon {
-    position: absolute;
-    top: 24px;
-    right: 24px;
+    fill: #2E2F42;
    
-
     cursor: pointer;
     padding: 0;
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }   
-.modal-close-icon {
-  fill: #2e2f42;
-  transition: fill 250ms ease;
-}
 
 .modal-close:hover,
 .modal-close:focus {
