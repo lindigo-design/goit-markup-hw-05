@@ -844,7 +844,7 @@ address {
 .modal-policy-link {
   color: var(--iris);
   font-size: 12px;
-  text-decoration-line: underline;
+  text-decoration: underline;
 
 }
 
