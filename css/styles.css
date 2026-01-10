@@ -627,167 +627,7 @@ address {
 }
 
 /* Modal styles */
-.backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(46, 47, 66, 0.4);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
 
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.backdrop.is-open {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-}
-
-.modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    padding: 72px 24px 24px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    width: 408px;
-    min-height: 584px;
-    border-radius: 4px;
-
-    transform: translate(-50%, -50%);
-    background-color: var(--dairy);
-    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.20), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.14);
-
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-}
-.backdrop:not(.is-open) .modal {
-    transform: translate(-50%, -50%) scale(1.5);
-}
-
-/* Close button */
-.modal-close {
-  position: absolute;
-  top: 24px;
-  right: 24px;
-
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  background: var(--light-slate);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  cursor: pointer;
-  padding: 0;
-  transition: background-color 250ms ease, border-color 250ms ease;
-}
-
-.modal-close-icon {
-    fill: var(--navy-blue);
-   
-    cursor: pointer;
-    padding: 0;
-
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}   
-
-.modal-close:hover,
-.modal-close:focus {
-  background: var(--ocean);
-  border-color: transparent;
-}
-
-.modal-close:hover .modal-close-icon,
-.modal-close:focus .modal-close-icon {
-  fill: var(--white);
-}
-
-/* Title */
-.modal-title {
-  margin: 0 0 16px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: center;
-  color: var(--navy-blue);
-}
-
-/* Form layout */
-.modal-form {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.modal-field {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.modal-label {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: var(--slate);
-}
-
-/* Input + icon wrapper */
-.input-wrap {
-  position: relative;
-  display: block;
-}
-
-.modal-input {
-  width: 100%;
-  height: 40px;
-  padding: 0 16px 0 38px;
-
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 4px;
-
-  outline: transparent;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.input-icon {
-  position: absolute;
-  left: 16px;
-  top: 50%;
-  transform: translateY(-50%);
-  fill: var(--navy-blue);
-  pointer-events: none;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-
-/* visually hidden чекбокс */
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-/* Backdrop */
 .backdrop {
   position: fixed;
   top: 0;
@@ -810,7 +650,6 @@ address {
   pointer-events: auto;
 }
 
-/* Modal */
 .modal {
   position: absolute;
   top: 50%;
@@ -831,7 +670,6 @@ address {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Close button */
 .modal-close {
   position: absolute;
   top: 24px;
@@ -871,7 +709,6 @@ address {
   fill: var(--white);
 }
 
-/* Title */
 .modal-title {
   font-weight: 500;
   font-size: 16px;
@@ -885,7 +722,6 @@ address {
 /* Form */
 .modal-form {}
 
-/* Field wrapper */
 .modal-field {
   margin-bottom: 8px;
 }
@@ -899,7 +735,7 @@ address {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: var(--slate);
+  color: var(--light-slate);
 
   display: block;
   margin-bottom: 4px;
@@ -980,7 +816,6 @@ address {
   color: var(--slate);
 }
 
-/* checkbox visual span */
 .modal-check-span {
   width: 16px;
   height: 16px;
@@ -1008,6 +843,9 @@ address {
 
 .modal-policy-link {
   color: var(--iris);
+  font-size: 12px;
+  text-decoration-line: underline;
+
 }
 
 /* Submit */
