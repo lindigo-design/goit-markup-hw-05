@@ -41,7 +41,8 @@ a {
     padding: 0 15px;
   
 }
-    
+
+/* Header styles */
 
 .header {
     display: flex;
@@ -148,6 +149,7 @@ address {
     color: #404BBF;
 }
 
+/* Hero styles */
 .hero-section {
     padding: 188px 0;
     max-width: 1440px;
@@ -214,6 +216,7 @@ address {
 .button:focus {
  background-color: #404BBF; 
 }
+/* Features styles */
 
 .features {
     display: flex;
@@ -277,7 +280,7 @@ address {
     letter-spacing: 0.02em;
 
 }
-
+/* Team styles */
 .team {
     display: block;
     justify-content: center;
@@ -357,6 +360,7 @@ address {
     fill: #F4F4FD;
 }
 
+/* Portfolio styles */
 .portfolio {
     display: block;
     justify-content: center;
@@ -435,6 +439,8 @@ address {
     border-left: 1px solid  #E7E9FC;
 }
 
+/* Footer styles */
+
 .footer {
     margin: 0;
     padding: 100px 0;
@@ -500,7 +506,6 @@ address {
     width: 40px;
     height: 40px;
     background-color: none;
-
     
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -638,7 +643,6 @@ address {
   position: absolute;
   top: 24px;
   right: 24px;
-
 
   width: 24px;
   height: 24px;
