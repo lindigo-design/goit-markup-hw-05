@@ -734,7 +734,7 @@ address {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: #8e8f99;
+  color: var(--light-slate);
 
   display: block;
   margin-bottom: 4px;
@@ -812,7 +812,7 @@ address {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: var(--slate);
+  color: var(--light-slate);
 }
 
 .modal-check-span {
